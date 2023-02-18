@@ -5,7 +5,10 @@
         static void Main(string[] args)
         {
             // Good Document https://www.techrepublic.com/article/learn-the-basics-about-c-data-types-variables/#:~:text=variable%20is%200%3B%20the%20largest%20possible%20value%20is%2018%2C446%2C744%2C073%2C709%2C551%2C615.,Holds%2016%2Dbit%20Unicode%20characters.
+            // https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/variables
+
             
+
             // Declare a variable of type int
             int myInt;
 
@@ -53,6 +56,23 @@
 
             // Declare a variable of type sbyte
             sbyte mySByte = 5;
+
+            // Create a character array
+            // This array requires the length to be set in the declaration
+            // Error will occur if the line read
+            // new char[] 
+            // Try it! :)
+            char[] myCharArray = new char[6];
+
+            // Make myCharArray say "hello"
+            myCharArray[0] = 'h';
+            myCharArray[1] = 'e';
+            myCharArray[2] = 'l';
+            myCharArray[3] = 'l';
+            myCharArray[4] = 'o';
+            myCharArray[5] = '!';
+
+            Console.ReadLine();
         }
     }
 }
